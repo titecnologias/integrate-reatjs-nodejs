@@ -16,6 +16,7 @@ const server = app.listen(8080, function () {
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/api/customer', function (req, res) {
+ // res.setHeader('Access-Control-Allow-Origin', 'https://react-integrate-node.web.app/')
   res.json({
     firstname: "Jack",
     lastname: "Smith",
